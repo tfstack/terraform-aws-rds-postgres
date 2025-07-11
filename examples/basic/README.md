@@ -14,7 +14,7 @@ This example demonstrates the minimal configuration required to deploy a Postgre
 
 ```hcl
 provider "aws" {
-  region = "us-east-1"
+  region = "ap-southeast-2"
 }
 
 module "rds" {
