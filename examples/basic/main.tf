@@ -9,7 +9,7 @@ terraform {
 }
 
 provider "aws" {
-  region = "ap-southeast-1"
+  region = "ap-southeast-2"
 }
 
 locals {
@@ -31,7 +31,7 @@ module "vpc" {
   vpc_name = local.name
   vpc_cidr = "10.1.0.0/16"
 
-  availability_zones    = ["ap-southeast-1a", "ap-southeast-1b"]
+  availability_zones    = ["ap-southeast-2a", "ap-southeast-2b"]
   private_subnet_cidrs  = ["10.1.2.0/24", "10.1.3.0/24"]
   public_subnet_cidrs   = ["10.1.0.0/24", "10.1.1.0/24"]
   database_subnet_cidrs = ["10.1.4.0/24", "10.1.5.0/24"]
